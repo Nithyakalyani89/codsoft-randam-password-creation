@@ -17,3 +17,14 @@ This is a pre-initialized string that contains all the digits in the Arabic nume
 
 string.punctuation: 
 Apart from letters and digits, python also provides us all the special characters in a pre-initialized string constant. These include various kinds of braces, logical operators, comparison operators, arithmetical operators as well as punctuation marks like commas, inverted commas, periods, exclamations marks, and question marks. The whole string is – !”#$%&'()*+, -./:;<=>?@[\]^_`{|}~
+
+##random
+The python random module helps a user to generate pseudo-random numbers. Inside the module, there are various functions that just depend on the function “random()”. This function generates a random float uniformly in the semi-open range [0.0, 1.0) i.e. it generates a decimal number greater than or equal to 0 and strictly less than one. Other functions use this number in their own ways. These functions can be used for bytes, integers, and sequences. for this task, we are interested in sequences. There are functions random. choices that take in a sequence as its argument and return a random element from that sequence. 
+
+## STEPS
+
+First, take the length of the password as input. Then we can display a prompt about the possible list of characters that a user wants to include in the password
+For including letters in the character set append string.ascii_letters in the character list.
+For including letters in the character set append string.digits in the character list.
+For including letters in character set append string.punctuation in the character list.
+Run a for loop till the length of the password and in each iteration choose a random character using random.choice() from characterList. Finally, print the password.
